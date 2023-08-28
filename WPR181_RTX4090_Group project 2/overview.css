@@ -1,0 +1,68 @@
+
+    
+ul {
+    list-style: none;
+    display: grid;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    font-family: monospace;
+    color: White;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    font-family: monospace;
+    color: White;
+    background-color: black;
+}
+
+    #SubMenu {
+        display: none;
+      }
+      
+      #MainMenu:hover #SubMenu {
+        display: grid;
+      }
+
+      p {
+        font-size: large;
+        padding-left: 25%;
+        padding-right: 25%;
+        font-family: monospace;
+        padding-top: 0px;
+        color: White;
+      }
+      
+      #wwwimg {
+        float: right;
+        height: 210px;
+        
+      }
+
+      #wwwimg2 {
+        float: right;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        background-color: black;
+
+        }
+        
+        .background { grid-area: 2 / 1 / 6 / 10; }
+        
+        #buttonback:hover{
+          background-color: white;
+          color: black;
+        }
+
+        
+
+      

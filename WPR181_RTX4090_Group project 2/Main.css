@@ -1,0 +1,82 @@
+ul {
+    list-style: none;
+    display: grid;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    font-family: monospace;
+    color: White;
+      }
+
+      li {
+        padding: 1px;
+      }
+
+    button {
+    height: 50px;
+    width: 100%;
+    font-family: monospace;
+    color: White;
+    background-color: black;
+    position: relative;
+      }
+
+    #SubMenu {
+        display: none;
+      }
+      
+      #MainMenu:hover #SubMenu {
+        display: grid;
+      }
+
+      .bgimg {
+        width: 100%;
+        height: 50%;
+
+      }
+
+      #btnoverview:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      #btnhistory:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      #btnvs:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      #btnEvo:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      #btnProtocols:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      #btnArchitecture:hover{
+        background-color: white;
+        color: black;
+      }
+      
+      #btnEngineer:hover{
+        background-color: white;
+        color: black;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover
+      {
+        color: black;
+      }
+    

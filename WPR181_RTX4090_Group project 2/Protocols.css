@@ -1,0 +1,70 @@
+body{
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+img{
+    width: 450px;
+    height: 300px;
+}
+
+#SectionDefinition{
+    background-color: burlywood;
+}
+
+Section{
+    display: grid;
+    grid-template-columns: auto 550px;
+    column-gap: 30px;
+}
+
+Section> h3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+td{
+    background-color: white;
+}
+
+th{
+    background-color: cornsilk;
+}
+
+table{
+    text-align: center;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    font-family: monospace;
+    color: White;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    font-family: monospace;
+    color: White;
+    background-color: black;
+}
+
+    #SubMenu {
+        display: none;
+      }
+      
+      #MainMenu:hover #SubMenu {
+        display: grid;
+      }
+
+      #buttonback:hover{
+        background-color: white;
+        color: black;
+      }

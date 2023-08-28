@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client and server-side engineering</title>
+    <link href="Client and server.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li id="MainMenu">
+            <button><h1>Client and server-side engineering</h1></button>
+            <ul id="SubMenu">
+              <li><a href="index.html"><button id="buttonback" ><h3>Back to Main Menu</h3></button></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    
+      <br>
+      <br>
+    <section id="Definition">
+        <h2 id="HeadingDef">Definition:</h2>
+        <p>Client-side and server-side are web concepts that define where application code runs. Most of the internet is based on a client/server model. In this model, clients communicate through a network with centrally located servers to get the data they need, rather than having to communicate directly between the two computers. Clients sends requests to servers for what web pages or applications they would like to see, and servers responds to the clients.
+            <br>
+            <br>
+            The image to the right visually represents how servers and clients communicate, showing that servers and clients have a many to many relationship. This means that while a communication path can exist between only one server and one client, each server and each client can have many communication paths that connect them to more than one device.
+            <br>
+            <br>
+            Now that we know how client-server communication works, we will go more in depth into client-side engineering and server-side engineering.
+        </p>
+        <img src="ClientServer.png" alt="Client and Server-side depiction">
+    </section>
+
+    <section>
+        <h2>Client-side engineering</h2>
+        <p>Client-side development, sometimes referred to as front-end development, is a type of development that involves programs that run on a client's or user's device. Client-side developers focus on creating the part of a website with which the user interacts.</p>
+        <p>The responsibilities of a client-side engineer includes the following</p>
+        <ul>
+            <li>Creating website layouts</li>
+            <li>Designing user interfaces</li>
+            <li>Adding form validation</li>
+            <li>Reviewing the performance of websites</li>
+            <li>Adding visual design elements like colors and fonts</li>
+            <li>Making website features more functional</li>
+            <li>Resolving any issues that users encounter on a site</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Server-side engineering</h2>
+        <p>Server-side web programming use coding languages to manage data exchange between servers and clients. Server-side engineering decide and code what information should be displayed and how to calculate that information while client-side engineering refers to how that information should be displayed. Server-side engineering is also responsible for how user’s data should be captured and for keeping user data secure and trusted. Server-side engineers thus have to create applications containing useful information that can be displayed or applications that capture useful information to be used as input for something, for example buying a product. </p>
+        <p>The responsibilities of a client-side engineer includes the following</p>
+        <ul>
+            <li>Coding dynamic websites</li>
+            <li>Developing web applications</li>
+            <li>Connecting websites to databases</li>
+            <li>Implementing content management systems</li>
+            <li>Making sure programs retrieve information properly</li>
+            <li>Ensuring systems are safe from hackers</li>
+            <li>Restoring and backing up files</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Notable differences between client- and server-side engineering</h2>
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Client-Side</th>
+                <th>Server-Side</th>
+            </tr>
+
+            <tr>
+                <td>Location</td>
+                <td>Runs on the user’s device (browser)</td>
+                <td>Runs on a remote server</td>
+            </tr>
+
+            <tr>
+                <td>Functionality</td>
+                <td>Handles user interaction</td>
+                <td>Handles server and data interactions</td>
+            </tr>
+
+            <tr>
+                <td>Security</td>
+                <td>Vulnerable to XSS, CSRF, and injection attacks</td>
+                <td>Vulnerable to injection attacks, broken authentication and session management, and DoS attacks</td>
+            </tr>
+
+            <tr>
+                <td>Software</td>
+                <td>Uses HTML, CSS, JavaScript, jQuery, React, Angular, Vue.js, and Bootstrap</td>
+                <td>Uses PHP, Python, Ruby, Node.js, ASP.NET, Ruby on Rails, Django, and Express.js</td>
+            </tr>
+
+            <tr>
+                <td>Performance</td>
+                <td>Depends on context. Code can be faster as it runs directly in the user’s web browser</td>
+                <td>Depends on context. Can handle heavy traffic and complex operations hence faster</td>
+            </tr>
+        </table>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <h3><u><b>References</b></u></h3>   
+        <p><a href="https://history-computer.com/client-side-vs-server-side/">History computer staff, Aug 13 2023, History Computer. Client-Side vs Server-Side: What’s the Difference?</a></p>
+        <br>
+        <p><a href="https://www.cloudflare.com/learning/serverless/glossary/client-side-vs-server-side/">Cloudflare,undated. Client-Side vs Server-Side: What’s the Difference?</a></p>
+        <br>
+        <p><a href="https://www.lytics.com/blog/client-side-vs-server-side-everything-you-need-to-know/">Denise Castilo, June 15, 2022, Lytic. Client-side vs Server side: Everything you need to know.</a></p>
+    </section>
+    
+</body>
+</html>

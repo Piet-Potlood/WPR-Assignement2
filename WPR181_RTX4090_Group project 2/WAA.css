@@ -1,0 +1,47 @@
+body{
+    background-color:ivory;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+img{
+    width: 700px;
+    height: 400px;
+    margin-left: 25%;
+}
+
+h1{
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    font-family: monospace;
+    color: White;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    font-family: monospace;
+    color: White;
+    background-color: black;
+}
+
+    #SubMenu {
+        display: none;
+      }
+      
+      #MainMenu:hover #SubMenu {
+        display: grid;
+      }
+
+      #buttonback:hover{
+        background-color: white;
+        color: black;
+      }

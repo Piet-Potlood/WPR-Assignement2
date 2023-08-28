@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web application architecture</title>
+    <link href="WAA.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li id="MainMenu">
+            <button><h1>The Web Application Architecture explained!</h1></button>
+            <ul id="SubMenu">
+              <li><a href="index.html"><button id="buttonback" ><h3>Back to Main Menu</h3></button></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    
+      <br>
+      <br>
+    <section>
+        
+        <p>Web application architectures describe the interactions between applications, databases, and other software. It allows multiple applications to run simultaneously. With web applications, there are two sub-programs operating together namely Client-side code and Server-Side Code. Client-side code refers to the code in a browser that responds to user input, while server-side code refers to code that responds to HTTP requests. The server side is responsible for creating web pages that are requested by users as well as storing different types of data relating to these web pages. It is not seen by the client. Client-side code is parsed by the web browser. This code can be seen and modified by the user. It allows dynamicity in websites. Refer to the image below, created by InterviewBit, to visually see the interactions between server side and client-side code. </p>
+        <img src="Web application.png" alt="Web application depiction">  
+    </section>
+
+    <section>
+        <h2>Components of the web application architecture</h2>
+        <p>Typically a web-based application architecture comprises 3 core components:
+           <br>
+           <ol type="1"; start="1">
+                <li>Web Browser: The browser or the client-side component or the front-end component is the key component that interacts with the user, receives the input and manages the presentation logic while controlling user interactions with the application. User inputs are validated as well, if required. </li>
+                    <br>
+                <li>Web Server: The web server also known as the backend component or the server-side component handles the business logic and processes the user requests by routing the requests to the right component and managing the entire application operations. It can run and oversee requests from a wide variety of clients.</li>
+                    <br>
+                <li>Database Server: The database server provides the required data for the application. It handles data-related tasks. In a multi-tiered architecture, database servers can manage business logic with the help of stored procedures.</li>
+           </ol>
+        </p>   
+    </section>
+
+    <section>
+        <h2>What is the 3-tier architecture?</h2>
+        <p>In a traditional 2-Tier architecture, there are two components namely the client side system or the user interface and a backend system which is usually a database server. Here the business logic is incorporated into the user interface or the database server. The downside of 2-tier architecture is that with an increased number of users, the performance decreases. Moreover, the direct interaction of the database and the user device also raises some security concerns. Railway reservation systems, content management systems are a couple of applications that are usually built using this architecture. </p>
+            <br>
+        <p>There are three layers of the 3-Tier architecture:</p>
+        <ol type="1"; start="1">
+            <li><a href="#presentation">Presentation layer / Client Layer</a></li>
+                <br>
+            <li><a href="#application">Application Layer / Business Layer</a></li>
+                <br>
+            <li><a href="#data">Data Layer</a></li>
+        </ol>
+        <img src="Three tier architecture.png" alt="Three tier architecture">
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <p>In this model, the intermediate servers receive client requests and process them by coordinating with subordinate servers applying the business logic. The communication between the client and the database is managed by the intermediate application layer thereby enabling clients to access data from different DBMS solutions. </p>
+        <p>The 3-tier architecture is more secure as the client does not directly access the data. The ability to deploy application servers on multiple machines provides higher scalability, better performance and better re-use. You can scale it horizontally by scaling each item independently. You can abstract the core business from the database server to efficiently perform load balancing. Data integrity is improved as all data goes through the application server which decides how data should be accessed and by whom. For that reason, a change of management is easy and cost-effective. The client layer can be a thin-client which means hardware costs are reduced. This modular model allows you to modify a single tier without affecting the remaining components. </p>
+    </section>
+
+    <br>
+
+    <section id="presentation">
+        <h3>Presentation layer</h3>
+        <p>The presentation layer mainly translates data between the application layer and the network format. Data can be communicated in different formats via different sources. Thus, the presentation layer is responsible for integrating all formats into a standard format for efficient and effective communication.
+            <br>
+            The presentation layer follows data programming structure schemes developed for different languages and provides the real-time syntax required for communication between two objects such as layers, systems or networks. The data format should be acceptable by the next layers; otherwise, the presentation layer may not perform correctly. </p>
+    </section>
+
+    <br>
+
+    <section id="application">
+        <h3>Application/Business layer</h3>
+        <p>Some experts describe these abstraction layers as being like an onion — where each layer protects the layers underneath it, and drilling down into the seven-layer model means peeling away each subsequent layer to look inside.
+            <br>
+            First, the seven layers of the OSI model are identified this way — inside the application layer is the presentation layer. Then there's the session layer, the transport layer, the network layer, the data link layer, and at the bottom, the physical layer that deals with physical connections of hardware inside the network.</p>
+    </section>
+
+    <br>
+
+    <section id="data">
+        <h3>Data layer</h3>
+        <p>A data layer is an object that contains all the information you want to pass from your website to a tag manager (for example, Google Tag Manager). The data layer is simply a JavaScript array that is used to store information and send this data to the tag manager.
+            <br>
+            The data layer is a data structure that has all the data you want to process and transmit from a website (or any other digital context) to other applications that have been linked to it. The reason a data layer is used is because it is sometimes necessary to decouple semantic information from other information stored in the digital context.</p>
+    </section>
+
+    <br>
+    <section>
+        <h3><b><u>References</u></b></h3>
+        <p><a href="https://hackr.io/blog/web-application-architecture-definition-models-types-and-more">Swapnil Banga December 10, 2022, hackr.io. What is Web Application Architecture? Components, Models, and Types</a></p>
+        <br>
+        <p><a href="https://www.arimetrics.com/en/digital-glossary/data-layer">Aremtetics, Undated. What is Data Layer</a></p>
+        <br>
+        <p><a href="https://www.techopedia.com/definition/6006/application-layer">Margaret Rouse, 22 May 2020, Techopedia. Application layer</a></p>
+        <br>
+        <p><a href="https://www.techopedia.com/definition/8955/presentation-layer">Margaret Rouse, 7 September 2011, Techopedia. Presentation</a></p>
+    </section>
+</body>
+</html>
